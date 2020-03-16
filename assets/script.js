@@ -5,18 +5,20 @@ function getLocalStorage(key) {
     }
 }
 
+// moment().endOf('day').fromNow();  
+
 $( document ).ready(function() {
-    $("#currentDay").text(moment().format("dddd, MMMM Do"));
+    $("#currentDay").text(moment().format("dddd, MMMM Do, h:mm:ss a"));
     for (let i = 9; i < 18; i++) {
     
         // create a row
         var row = $(`<div data-time=${i} id='${i}' class="row">`);
 
         // create a column
-        var col1 = $('<div class="col-sm-2"> <p class="hour">' + formatAMPM(i) + '</p>');
+        var col1 = $('<div class="col-sm-2 my-auto"> <p class="hour">' + formatAMPM(i) + '</p>');
 
         //create column 2
-        var col2 = $(`<div class="col-sm-8 past"><textarea id=text${i} class="description" placeholder="Add your event here..."></textarea>`);        
+        var col2 = $(`<div class="col-sm-8 past"><textarea id=text${i} class="description" placeholder="add another punnishment here"></textarea>`);        
        
         //create column 3
         var col3 = $(`<div class="col-sm-2"><button class="saveBtn" id=${i}><i class="fas fa-save"></i></button>`)
