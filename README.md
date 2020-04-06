@@ -1,5 +1,7 @@
 # KANE'S DAY PLANNER
 
+https://kane-r.github.io/Kanes-Day-Planner/
+
 USER STORY:
 >AS AN employee with a busy schedule
 >I WANT to add important events to a daily planner
